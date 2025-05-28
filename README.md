@@ -7,17 +7,20 @@
 - 결과: 콘솔 출력 + `report/result.txt` 로그 저장
 
 ## 폴더 구조
+```bash
 web_vuln_scanner/
-    main.py                          # 진단 실행 진입점
-    scanner/
-        __init__.py
-        form_extractor.py             # HTML 폼 수집기
-        payloads.py                   # 테스트 페이로드
-        sql_injection_scanner.py      # SQLi 탐지
-        xss_scanner.py                # XSS 탐지
-    report/
-        result.txt                  # 스캔 결과 저장
-    README.md                       # 프로젝트 설명
+├── main.py                          # 진단 실행 진입점
+├── scanner/
+│   ├──  __init__.py
+│   ├── form_extractor.py             # HTML 폼 수집기
+│   ├── payloads.py                   # 테스트 페이로드
+│   ├── sql_injection_scanner.py      # SQLi 탐지
+│   ├── xss_scanner.py                # XSS 탐지
+│   └── report_generator.py           # HTML 리포트 생성
+├── report/
+│   └── result.txt                  # 스캔 결과 저장
+└── README.md                       # 프로젝트 설명
+```
        
 
 
