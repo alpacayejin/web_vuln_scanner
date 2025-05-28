@@ -42,7 +42,7 @@ python scanner.py --url "http://testphp.vulweb.com/listproducts.php?cat=1"
 ## 향후 개선 아이디어
 - POST 기반 스캔 기능 추가
 - 로그인 후 세션 유지 기반 진단
-- 보안 헤더 및 쿠키 설정 점검
+- 보안 헤더 검사 기능 추가
 - 명령어 인자(`argparse`) 기반 CLI 추가
 
 ## 자동 테스트용 스크립트
