@@ -8,16 +8,17 @@
 
 ## 폴더 구조
 web_vuln_scanner/
-├── main.py
-├── scanner/
-│   ├── __init__.py
-│   ├── form_extractor.py
-│   ├── payloads.py      
-│   ├── sql_injection_scanner.py    # SQLi 탐지 로직
-│   └── xss_scanner.py              # XSS 탐지 로직
-├── report/
-│   └── result.txt       # 스캔 결과 저장
-└── README.md              # 프로젝트 설명
+    main.py                          # 진단 실행 진입점
+    scanner/
+        __init__.py
+        form_extractor.py             # HTML 폼 수집기
+        payloads.py                   # 테스트 페이로드
+        sql_injection_scanner.py      # SQLi 탐지
+        xss_scanner.py                # XSS 탐지
+    report/
+        result.txt                  # 스캔 결과 저장
+    README.md                       # 프로젝트 설명
+       
 
 
 ## 실행 방법
