@@ -8,20 +8,22 @@
 
 ## 폴더 구조
 web_vuln_scanner/
-├── scanner.py
-├── modules/
-│ ├── sql_injection.py
-│ ├── xss.py
-│ ├── utils.py
-│ └── report_generator.py (선택적)
+├── main.py
+├── scanner/
+│   ├── __init__.py
+│   ├── form_extractor.py
+│   ├── payloads.py      
+│   ├── sql_injection_scanner.py    # SQLi 탐지 로직
+│   └── xss_scanner.py              # XSS 탐지 로직
 ├── report/
-│ ├── result.txt
-│ └── report.html (선택적)
-└── README.md
+│   └── result.txt       # 스캔 결과 저장
+└── README.md              # 프로젝트 설명
+
 
 ## 실행 방법
 ```bash
 python scanner.py --url "http://testphp.vulweb.com/listproducts.php?cat=1"
+```
 
 
 ## 취약점 테스트 대상
