@@ -4,7 +4,7 @@
 ## 개요
 - 대상: GET 파라미터 기반 동적 웹 페이지
 - 기능: SQLi 및 XSS 취약점 탐지
-- 결과: 콘솔 출력 + `report/result.txt` 로그 저장
+- 결과: 콘솔 출력 + `report/result.txt` 로그 저장 + `report/report.html` html 보고서 출력
 
 ## 폴더 구조
 ```bash
@@ -40,9 +40,10 @@ python scanner.py --url "http://testphp.vulweb.com/listproducts.php?cat=1"
 - XSS : <script>alert(1)</script> 반사 여부 확인
 
 ## 향후 개선 아이디어
-- POST 요청 지원
+- POST 기반 스캔 기능 추가
 - 로그인 후 세션 유지 기반 진단
 - 보안 헤더 및 쿠키 설정 점검
+- 명령어 인자(`argparse`) 기반 CLI 추가
 
 ## 자동 테스트용 스크립트
 ```python
