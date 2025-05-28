@@ -18,7 +18,8 @@ web_vuln_scanner/
 │   ├── xss_scanner.py                # XSS 탐지
 │   └── report_generator.py           # HTML 리포트 생성
 ├── report/
-│   └── result.txt                  # 스캔 결과 저장
+│   ├── result.txt                  # 스캔 결과 저장
+│   └── report.html                 # 시각적 HTML 보고서
 └── README.md                       # 프로젝트 설명
 ```
        
