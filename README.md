@@ -41,9 +41,12 @@ python scanner.py --url "http://testphp.vulweb.com/listproducts.php?cat=1"
 
 ## 향후 개선 아이디어
 - POST 기반 스캔 기능 추가
-- 로그인 후 세션 유지 기반 진단
+- 쿠키 및 세션 설정 점검 기능 추가
 - 보안 헤더 검사 기능 추가
 - 명령어 인자(`argparse`) 기반 CLI 추가
+- CSRF, Open Redirect 등 탐지 확장
+- 탐지 결과 다양한 포맷으로 출력
+- `robots.txt`, `sitemap.xml` 기반 자동 크롤링 확장
 
 ## 자동 테스트용 스크립트
 ```python
