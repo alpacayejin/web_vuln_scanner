@@ -1,4 +1,7 @@
-def generate_html_report(sql_results, xss_results, output_path="report.html"):
+import os
+
+def generate_html_report(sql_results, xss_results, output_path="report/report.html"):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     html = """
     <html>
     <head><title>Vulnerability Scan Report</title></head>
